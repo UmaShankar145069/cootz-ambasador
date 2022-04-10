@@ -1,0 +1,120 @@
+#main {
+  height: 100%;
+  overflow: hidden;
+}
+
+#main .contest-container {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.contest-container label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.contest-container #contest_id {
+  width: 552px;
+  height: 45px;
+  padding: 20px;
+  background-color: #e6e6e6;
+  border-radius: 7px;
+  border: 1.55px solid #989898;
+  margin-bottom: 45px;
+  margin-top: 15px;
+}
+
+.contest-container .submit {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background: linear-gradient(102.65deg, #0085cf 3.96%, #006ca9 128.86%);
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* --------- style for table--------- */
+
+.table-title {
+  margin-left: 38px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.table {
+  width: 90%;
+  margin-left: 38px;
+  margin-top: 35px;
+}
+
+/* -------- pagination style---------- */
+
+.pagination {
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  outline: none;
+}
+.pagination > .active > a {
+  background-color: #47ccde;
+  border-color: #47ccde;
+  color: #fff;
+}
+.pagination > li > a {
+  border: 1px solid #47ccde;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #47ccde;
+  border-color: #47ccde;
+  outline: none;
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: #47ccde;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-radius: unset;
+}
+
+/* ---------- responsive style---------- */
+
+@media (max-width: 596px) {
+  #main .contest-container {
+    width: 85%;
+    flex-direction: column;
+  }
+
+  .contest-container #contest_id {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .table {
+    margin: 35px auto;
+  }
+}

@@ -1,0 +1,179 @@
+/* ------- style for main section------ */
+#main {
+  height: 100%;
+  overflow: hidden;
+}
+
+#main .referal-container {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.referal-container .referal {
+  width: 296px;
+  height: 118px;
+  background-color: #eaf9f3;
+  border-radius: 7px;
+  margin-bottom: 40px;
+}
+
+.referal .data {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+
+.data.one {
+  width: 225px;
+}
+
+.data.two {
+  width: 270px;
+}
+
+.data.three {
+  width: 217px;
+}
+
+.data.four {
+  width: 260px;
+}
+
+.four .text {
+  width: 100%;
+  border-radius: 47px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+}
+
+.four .copy {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 10px;
+}
+
+.four button:before {
+  content: "Copied";
+  position: absolute;
+  top: -40px;
+  right: -8px;
+  background: #5c81dc;
+  padding: 5px;
+  color: white;
+  border-radius: 15px;
+  font-size: 15px;
+  display: none;
+}
+
+.copy-text.active button:before {
+  display: block;
+}
+
+.data img {
+  width: 20px;
+  height: 20px;
+  padding-left: o;
+}
+
+.star-container {
+  width: 36px;
+  height: 36px;
+  background-color: #29b4a9;
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px rgba(32, 179, 168, 0.25);
+  padding: 5px;
+}
+
+.level {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.level .text {
+  color: #29b4a9;
+  font-size: 14px;
+  font-weight: 900;
+  margin-left: 7px;
+}
+
+.referal h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.referal span {
+  color: #5bd1a3;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin: 0 5px;
+}
+
+.referal #referal-id {
+  text-align: left;
+}
+
+/* --------- style for table--------- */
+
+.table-title {
+  margin-left: 38px;
+  font-size: 24px;
+  font-weight: 600;
+  /* margin-top: 10px; */
+}
+
+.table {
+  width: 90%;
+  margin-left: 38px;
+  margin-top: 35px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* -------- responsive style----------- */
+
+@media (max-width: 952px) {
+  #main .referal-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 730px) {
+  #main .referal-container {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 648px) {
+  #main .referal-container {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 620px) {
+  .referal-container .referal {
+    width: 70%;
+  }
+
+  .table {
+    margin: auto;
+  }
+}

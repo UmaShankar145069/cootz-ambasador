@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* --------------- style for header------------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 55px;
+  background: #ffffff;
+  box-shadow: 0px 4px 93px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.left {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 38px;
+  height: 30px;
+  margin: 13px;
+  margin-left: 60px;
+  margin-right: 5px;
+}
+
+.logo span {
+  color: #0da1f6;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right button {
+  background: #f1f1f1;
+  border-radius: 50px;
+  width: 98px;
+  height: 39px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.wallet-container img {
+  width: 16px;
+  height: 15.74px;
+}
+
+.wallet-container span {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 132px;
+  height: 38px;
+  margin-right: 25px;
+}
+
+.profile-container img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.detail {
+  margin-top: 20px;
+}
+
+.detail #name {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 0px;
+}
+
+.detail #post {
+  font-size: 13px;
+  font-weight: 500px;
+  line-height: 0px;
+}
+
+/* -------- responsive style---------- */
+
+@media (max-width: 450px) {
+  .right {
+    margin-left: 55px;
+  }
+  .profile-container .detail {
+    display: none;
+  }
+}
+
+/* ---- style for toggle icon------ */
+.sidebarIconToggle {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  /* z-index: 10; */
+  top: 19px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.spinner {
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s;
+}
+
+.spinner.middle,
+.spinner.bottom {
+  margin-top: 4px;
+}
+
+#openSidebarMenu {
+  visibility: hidden;
+}
+
+/* ------- sidebar menu style---------- */
+
+.side-nav {
+  height: 100%;
+  width: 250px;
+  margin-top: 55px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0085cf;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 10px;
+  transform: translateX(-250px);
+  transition: 0.5s ease-in-out;
+}
+
+#openSidebarMenu:checked ~ .side-nav {
+  transform: translateX(0px);
+}
+
+.side-nav .link {
+  text-decoration: none;
+  padding: 10px 10px 10px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav .link:hover {
+  background-color: rgb(255, 255, 255, 0.3);
+  border-left: 5px solid #fff;
+}
+
+.side-nav .logout-btn {
+  position: absolute;
+  bottom: 90px;
+}
+
+.logout-btn {
+  width: 250px;
+}
+
+.logout-btn span {
+  position: absolute;
+  top: 13px;
+  padding-left: 15px;
+}
+
+.logout-btn img {
+  width: 26px;
+  height: 25.19px;
+}

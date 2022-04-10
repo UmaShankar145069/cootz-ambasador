@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ----- logo ------- */
+
+.logo-img {
+  position: absolute;
+  top: 4.92%;
+  left: 47.16%;
+}
+
+.logo-title {
+  font-size: 36px;
+  line-height: 57px;
+  color: #0da1f6;
+  font-weight: 600;
+  position: absolute;
+  top: 104px;
+  left: 46%;
+}
+
+@media (max-width: 1260px) {
+  .logo-title {
+    left: 45.5%;
+  }
+}
+
+@media (max-width: 928px) {
+  .logo-title {
+    left: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo-title {
+    left: 44.5%;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo-img {
+    left: 40%;
+  }
+  .logo-title {
+    left: 35.5%;
+  }
+}
+
+@media (max-width: 398px) {
+  .logo-img {
+    left: 39.16%;
+  }
+  .logo-title {
+    left: 34.5%;
+  }
+}
+
+/* --------------  style for login section------------ */
+
+.login-container {
+  width: 40%;
+  height: 618px;
+  background-color: #0085cf;
+  border-radius: 20px;
+  position: absolute;
+  top: 170px;
+  left: 30%;
+}
+
+#heading {
+  font-weight: 600;
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#login-form {
+  position: absolute;
+  top: 190px;
+  left: 7%;
+  width: 100%;
+  height: 300px;
+}
+
+#login-form .field {
+  width: 85%;
+  height: 45px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  color: #000000;
+  padding-left: 50px;
+  padding-right: 15px;
+}
+
+#login-form img {
+  width: 27px;
+  height: 30px;
+  position: absolute;
+  left: 12px;
+  margin-top: 7.5px;
+}
+
+#login {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  bottom: -70px;
+  right: 14%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.ellipse-img {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 140px;
+}
+
+@media (max-width: 1050px) {
+  .login-container {
+    width: 50%;
+    left: 26%;
+  }
+}
+
+@media (max-width: 790px) {
+  .login-container {
+    width: 60%;
+    left: 22%;
+  }
+}
+
+@media (max-width: 550px) {
+  .login-container {
+    width: 81%;
+    left: 10%;
+  }
+}
